@@ -1,4 +1,4 @@
-# Tailwind Productiom Movie Website Replication
+# Tailwind Movie Productiom Website Replication
 
 To get started:
 

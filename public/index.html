@@ -1,125 +1,481 @@
-<!-- https://www.wix.com/website-template/view/html/2208?siteId=5a908eca-058f-4651-ab6e-93932b5a39ff&metaSiteId=f0642230-2b55-4c46-bc26-e94a799824e6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fmost-popular -->
+<!-- Replication of:
+  https://www.wix.com/website-template/view/html/2208?siteId=5a908eca-058f-4651-ab6e-93932b5a39ff&metaSiteId=f0642230-2b55-4c46-bc26-e94a799824e6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fmost-popular 
 
+Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300,400&display=swap
+-->
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Production Movie Website</title>
-    
-   <!-- BEGIN SENTRY -->
-   <script src="https://browser.sentry-cdn.com/4.4.2/bundle.min.js" crossorigin="anonymous"></script>
-   <script type="text/javascript">
-     Sentry.init({
-       dsn: 'https://b0d320ce280a492696c6716fc0fd90dd@sentry.io/1366160',
-       release: "1.213.0",
-       environment: "production"
-     });
-
-     Sentry.configureScope((scope) => {
-       scope.setUser({
-         id: "null-user-id",
-         clientId: "99164424-9aa6-4788-a2ad-b805f7929e43",
-       });
-       scope.setExtra("sessionId", "78beb639-6383-4790-93d5-36ccf9abccb5");
-     });
-
-   </script>
-   <!-- END SENTRY -->
- 
-    <script type='text/javascript' >window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c99d7f1ab0","applicationID":"31527391,90185088","applicationTime":1.95512,"transactionName":"ZFAHNkNYXUBQVEUKXF0aIBpBS1ZAQl1CTHR2YUpNXFhBWFRDWA1UHkEAD0FVUkdUGkcKVkRQF01FXF5DXVZFBkAcDxEHXElfUkVSeAc=","queueTime":0,"ttGuid":"ff6ffc344f98c0","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-    <script type="text/javascript">
-        var initialTime = new Date().getTime();
-      (function () {
-        var appName = 'marketing-template-viewer';
-        window.appStartLoadTime = window.performance && window.performance.now();
-        window.fedops = window.fedops || {};
-        window.fedops.apps = window.fedops.apps || {};
-        window.fedops.apps[appName] = { startLoadTime: window.appStartLoadTime };
-        try { window.fedops.sessionId = window.localStorage.getItem('fedops.logger.sessionId'); } catch(e) {};
-        window.fedops.sessionId = window.fedops.sessionId || 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8); return v.toString(16); });
-        (new Image()).src = '//frog.wix.com/fed?appName=' + appName + '&src=72&evid=14&session_id=' + window.fedops.sessionId;
-      })();
-    </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
-    <link type="image/png" href="//www.wix.com/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
-    <link rel="stylesheet" href="//static.parastorage.com/services/marketing-template-viewer/1.213.0/app.min.css">
-
-    <meta name="description" content="When it comes to sharing your videos, bigger really is better. With a full-width Wix Video layout set against the modern template design, your original video content will set the creative and entertaining tone of your site. Click 'Edit' today and get visitors to browse through your work, preview upcoming releases, and easily stream or buy your productions.">
-    <meta name="author" content="Wixpress">
-    <meta http-equiv="content-language" content="en"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-
-    <meta property="og:title" content="Indie Production Company Website Template | WIX"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.wix.com/website-template/view/html/2208"/>
-    <meta property="og:image" content="//static.wixstatic.com/media/769c7bb90ec2d9c7a18ff365257d59f17fa3c9a445515228aabc8736453da2d9.jpg"/>
-    <meta content="Wix" property="og:site_name">
-    <meta property="og:description" content="When it comes to sharing your videos, bigger really is better. With a full-width Wix Video layout set against the modern template design, your original video content will set the creative and entertaining tone of your site. Click 'Edit' today and get visitors to browse through your work, preview upcoming releases, and easily stream or buy your productions."/>
-    <meta property="fb:admins" content="731184828"/>
-    <meta name="fb:app_id" content="236335823061286"/>
-    <meta name="google-site-verification" content="QXhlrY-V2PWOmnGUb8no0L-fKzG48uJ5ozW0ukU7Rpo"/>
-
-    <link rel="canonical" href="https://www.wix.com/website-template/view/html/2208"/>
-
-    <link rel="alternate" hreflang="fr" href="https://fr.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="pt" href="https://pt.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="cs" href="https://cs.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="it" href="https://it.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="nl" href="https://nl.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="ko" href="https://ko.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="de" href="https://de.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="ru" href="https://ru.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="sv" href="https://sv.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="tr" href="https://tr.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="da" href="https://da.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="en" href="https://www.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="es" href="https://es.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="hi" href="https://hi.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="ja" href="https://ja.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="no" href="https://no.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="pl" href="https://pl.wix.com/website-template/view/html/2208"/>
-    <link rel="alternate" hreflang="x-default" href="https://www.wix.com/website-template/view/html/2208" />
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+    <title>Movie Production Landing Page</title>
   </head>
-  <body>
-     <!-- Google Tag Manager -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDD5C4" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <script type="text/javascript">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MDD5C4');
-  </script>
-  <!-- End Google Tag Manager -->
-    <div id="root"><div data-hooks="app-component" data-reactroot="" data-reactid="1" data-react-checksum="1333107993"><div data-hooks="ToolBar-component" class="_1GEsV" data-reactid="2"><div class="_1k3yn" data-reactid="3"><a data-hooks="logo" href="https://www.wix.com" class="_2UVAQ _1JQgh" data-reactid="4"><span class="_18myF" data-reactid="5">wix.com</span></a><div class="_1k3yn" data-reactid="6"><button data-hooks="desktop-view" class="zy9-w _37uQn" data-reactid="7"><span class="AGc6i" data-reactid="8">show desktop view</span></button><hr class="_3PFGd" data-reactid="9"/><button data-hooks="mobile-view" class="aR03A " data-reactid="10"><span class="AGc6i" data-reactid="11">show mobile view</span></button></div></div><div class="_1k3yn _3yC7e" data-reactid="12"><p data-hooks="tool-bar-title" class="_21v7p" data-reactid="13">Click Edit and create your own amazing website</p><a data-hooks="info-view" class="_1JERd " tabindex="0" role="dialog" href="#" data-reactid="14">Read More</a><a class="_1c4Ff" data-hooks="editor-link" href="https://editor.wix.com/html/editor/web/renderer/new?metaSiteId=f0642230-2b55-4c46-bc26-e94a799824e6&amp;siteId=5a908eca-058f-4651-ab6e-93932b5a39ff&amp;editorSessionId=F59CDA09-4E98-4FE9-3D9D-9455D647B2D8" target="_blank" tabindex="0" data-reactid="15">Edit this site</a><label data-hooks="price" class="_8r8sw" data-reactid="16"><!-- react-text: 17 -->Price:<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><!-- react-text: 19 -->Free<!-- /react-text --></label></div></div><div data-hooks="template-demo-component" class="_1qF-6 " data-reactid="20"><div data-hooks="desktop-view-component" class="_3W_Qh" data-reactid="21"><iframe data-hooks="desktop-iframe" src="https://www.wix.com/demone2/indie-production" width="100%" height="100%" class="_2oDbB" data-reactid="22"></iframe></div></div><div data-hooks="info-pop-up-component" class="moyRL " data-reactid="23"><div class="_3sdF3" data-reactid="24"><button data-hooks="card-close" class="_3nPGC" data-reactid="25"><span class="b6lR7" data-reactid="26">close info popup</span></button><div class="_3G2Wr" data-reactid="27"><h1 data-hooks="card-title" class="_36ndT" data-reactid="28">Indie Production Company - Website Template</h1><div class="_3C1IB" data-reactid="29"><h3 data-hooks="card-good-for-title" class="_3wC-t" data-reactid="30">Good For:</h3><p data-hooks="card-good-for" class="_25OEI" data-reactid="31">Independent production companies, media distributors, and video streaming services</p></div><div class="_3C1IB" data-reactid="32"><h3 class="_3wC-t" data-reactid="33">Description:</h3><p data-hooks="card-description" class="_25OEI" data-reactid="34">When it comes to sharing your videos, bigger really is better. With a full-width Wix Video layout set against the modern template design, your original video content will set the creative and entertaining tone of your site. Click &#x27;Edit&#x27; today and get visitors to browse through your work, preview upcoming releases, and easily stream or buy your productions.</p></div><p class="_25OEI _3C1IB _1favE" data-reactid="35"><span class="_3wC-t" data-reactid="36">Price:</span><!-- react-text: 37 --> <!-- /react-text --><!-- react-text: 38 -->Free<!-- /react-text --></p></div><div class="_8CQO7" data-reactid="39"><a data-hooks="card-editor-url" class="_15Xoe _2VXta" target="_blank" href="https://editor.wix.com/html/editor/web/renderer/new?metaSiteId=f0642230-2b55-4c46-bc26-e94a799824e6&amp;siteId=5a908eca-058f-4651-ab6e-93932b5a39ff&amp;editorSessionId=F59CDA09-4E98-4FE9-3D9D-9455D647B2D8" data-reactid="40">Edit Now</a></div></div></div></div></div>
-    <script>
-      window.__BASEURL__ = '/website-template/view/html/';
-      window.__INITIAL_I18N__ = {"locale":"en","resources":{"Price":"Price","Edit Template":"","About This Template":"","Description":"","Good For":"","template.viewer.page.title":"{{- title}} Website Template | WIX","template_button_label":"Edit Website","template_seeFeatures_label":"See All Features","template_expand_examples_text":"Great for","template_expand_header":"Template Features","template.viewer.title":"Click Edit and create your own amazing website","template.viewer.edit.button":"Edit this site","template.viewer.read.more":"Read More","template.viewer.back":"Back","template.viewer.info.edit.button":"Edit Now","template.viewer.price":"Price:","template.viewer.info.title":"{{- title}} - Website Template","template.viewer.info.goodFor":"Good For:","template.viewer.info.description":"Description:","template.viewer.info.desktop.only.notice":"Edit this template by going to Wix.com from your desktop, where you can customise any of our beautiful templates.","template.viewer.see.all.templates":"See All Templates","a11y.desktop.button":"show desktop view","a11y.mobile.button":"show mobile view","a11y.close.popup.button":"close info popup","messages_test":"test"}}
-      window.__INITIAL_STATE__ = {"view":{"selected":"desktop"},"loading":{"active":false},"template":{"title":"Indie Production Company","description":"When it comes to sharing your videos, bigger really is better. With a full-width Wix Video layout set against the modern template design, your original video content will set the creative and entertaining tone of your site. Click 'Edit' today and get visitors to browse through your work, preview upcoming releases, and easily stream or buy your productions.","image":"769c7bb90ec2d9c7a18ff365257d59f17fa3c9a445515228aabc8736453da2d9.jpg","id":"2208","lng":"en","price":"Free","docUrl":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Findie-production","editorUrl":"https:\u002F\u002Feditor.wix.com\u002Fhtml\u002Feditor\u002Fweb\u002Frenderer\u002Fnew?metaSiteId=f0642230-2b55-4c46-bc26-e94a799824e6&siteId=5a908eca-058f-4651-ab6e-93932b5a39ff&editorSessionId=F59CDA09-4E98-4FE9-3D9D-9455D647B2D8","goodFor":"Independent production companies, media distributors, and video streaming services","siteId":"5a908eca-058f-4651-ab6e-93932b5a39ff","metaSiteId":"f0642230-2b55-4c46-bc26-e94a799824e6","editorSessionId":"F59CDA09-4E98-4FE9-3D9D-9455D647B2D8","url":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Findie-production"},"info":{"show":false},"experiments":{"active":["EnableAnonMainFunnelIntro","ReleaseNotesDesignNavigation","TemplatesGallerySearchToCMS","TemplatesGalleryDatasourceToCMS","TemplateViewerUseNewLightboxDealer","TemplateViewerDatasourceToCMS"]},"originUrl":"https:\u002F\u002Fwww.wix.com\u002Fwebsite\u002Ftemplates\u002Fhtml\u002Fmost-popular","config":{"locale":"en","dealerCmsTranslationsUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-cms-translations\u002F1.1229.0\u002F","dealerLightboxUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-lightbox\u002F1.21.0\u002F"}};
-      window.__BI__ = {"siteId":"5a908eca-058f-4651-ab6e-93932b5a39ff","metaSiteId":"f0642230-2b55-4c46-bc26-e94a799824e6","originUrl":"https:\u002F\u002Fwww.wix.com\u002Fwebsite\u002Ftemplates\u002Fhtml\u002Fmost-popular"};
-      window.__BI__.initialTime = initialTime;
-      window.__DEVICE__ = 'desktop';
-    </script>
-    <script src="https://static.parastorage.com/unpkg/react@15.6.2/dist/react.min.js" crossorigin></script>
-    <script src="https://static.parastorage.com/unpkg/react-dom@15.6.2/dist/react-dom.min.js" crossorigin></script>
-    <script src="https://static.parastorage.com/unpkg/@wix/marketing-cookie-notification@1.0.429/dist/statics/app.bundle.min.js"></script>
-    
-      
-        <script src="//static.parastorage.com/services/dealer-lightbox/1.21.0/dealer-lightbox.bundle.min.js"></script>
-      
-    
+  <body class="antialiased bg-black">
+    <header class="header relative lg:overflow-hidden">
+      <div class="absolute inset-0 z-negative lg:opacity-100 opacity-50">
+        <video
+          src="video.mp4"
+          autoplay
+          muted
+          loop
+          class="object-cover w-full h-full"
+        ></video>
+      </div>
 
-    <script src="//static.parastorage.com/services/marketing-template-viewer/1.213.0/app.bundle.min.js"></script>
+      <nav class="md:p-3 py-2 px-3 z-10">
+        <div
+          class="container mx-auto md:flex block flex-wrap items-center justify-start"
+        >
+          <div class="flex-1 flex items-center justify-between">
+            <a href="#">
+              <img src="logo.webp" alt="GSL Logo" />
+            </a>
+            <!-- Javascript to add toggling for mobile devices - data-menu-toggle -->
+            <button data-menu-toggle class="md:hidden block pr-1">
+              <!-- Hamburger menu SVG -->
+              <svg
+                class="fill-current text-white w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul
+            data-menu
+            class="md:flex hidden flex-wrap items-center justify-start text-white"
+          >
+            <li class="md:px-6 py-2">
+              <a href="#" class="text-brand">Home</a>
+            </li>
+            <li class="md:px-6 py-2">
+              <a href="#">Stream/Buy</a>
+            </li>
+            <li class="md:px-6 py-2">
+              <a href="#">Coming Soon</a>
+            </li>
+            <li class="md:px-6 py-2">
+              <a href="#">Catalog</a>
+            </li>
+            <li class="md:px-6 py-2">
+              <a href="#">About Us</a>
+            </li>
+            <li class="md:px-6 py-2">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container mx-auto lg:mt-56 lg:px-16 px-4 py-4">
+        <div class="md:pl-8 md:border-l border-white">
+          <p class="text-white tracking-wide text-base font-light leading-none">
+            Out now
+          </p>
+          <h1
+            class="text-white md:text-6xl text-2xl font-bold font-sans m-0 md:leading-none"
+          >
+            Knights of Wales
+          </h1>
+          <p class="text-white text-lg md:max-w-lg w-full md:my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+            laboriosam quae mollitia voluptatibus placeat. Libero adipisci
+            ipsam, nobis, corrupti nesciunt id beatae laudantium quis dolorum
+            aliquam impedit quae recusandae ad.
+          </p>
+          <a href="#" class="btn-primary">Steam/Buy</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- A small navigation item with Poppins font i.e. font-alt-->
+
+    <div class="container mx-auto my-6 lg:px-16 px-4">
+      <ul class="flex items-center leading-normal text-gray-500 font-alt">
+        <li class="text-gray-300 pr-2">Our latest releases</li>
+        <li class="pr-2">|</li>
+        <li class="pr-2">
+          <a href="#" class="text-brand">Watch all</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- End of small navigation item -->
+
+    <!-- Movie posters section -->
+
+    <div
+      class="flex items-stretch justify-start mb-10 px-4 overflow-hidden relative"
+    >
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">30 Yards</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/1.jpg" alt="#" />
+      </a>
+      <!-- End of Movie poster item -->
+
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">Utah - New Season</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/2.jpg" alt="#" />
+      </a>
+
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">Her Majesty</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/3.jpg" alt="#" />
+      </a>
+
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">The Rumor</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/4.jpg" alt="#" />
+      </a>
+
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">White Smoke</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/5.jpg" alt="#" />
+      </a>
+
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">Mr. Brooklyn 2</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/6.jpg" alt="#" />
+      </a>
+      <!-- Movie poster item -->
+      <a href="#" class="relative group block mr-4 flex-shrink-0">
+        <!-- To enable group-hover edit the display feature in tailwind.confid and add group-hover besides the responsive eg.     display: ['responsive', 'group-hover'], -->
+        <div
+          class="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg mb-2">Lost Man</h3>
+            <p class="leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              temporibus error ducimus necessitatibus eius excepturi nemo
+              exercitationem distinctio minus ipsum! Delectus beatae ducimus eos
+              repellendus. Sit consectetur ad expedita provident.
+            </p>
+          </div>
+        </div>
+        <img src="images/7.jpg" alt="#" />
+      </a>
+
+      <!-- Arrow button-->
+      <button
+        class="absolute z-10 p-2 rounded-full block right-0 inset-y-0 mr-1"
+      >
+        <svg
+          class="fill-current text-white w-6 h-6 hover:text-brand"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>arrow-right</title>
+          <path
+            d="M16.172 9l-6.071-6.071 1.414-1.414L20 10l-.707.707-7.778 7.778-1.414-1.414L16.172 11H0V9z"
+          ></path>
+        </svg>
+      </button>
+      <!-- End of Arrow Button -->
+    </div>
+
+    <!-- End of movie posters section -->
+
+    <!-- Next section-->
+    <div
+      class="container mx-auto py-8 font-alt text-white text-center md:px-0 px-4"
+    >
+      <div class="text-gray-600 mb-4 md:text-lg text-base">
+        Films <span class="px-1">|</span> TV Shows
+        <span class="px-1">|</span> Creative Development
+      </div>
+      <h2 class="md:text-5xl text-2xl font-sans font-light mb-4">
+        About GSL Productions
+      </h2>
+      <p class="opacity-75 max-w-md mx-auto font-alt">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+        illum nulla, suscipit quibusdam nemo quod veniam saepe perferendis enim,
+        delectus provident ea beatae! Impedit molestiae debitis sint libero
+        porro unde.
+      </p>
+
+      <a href="#" class="text-brand my-2 inline-block">More info +</a>
+    </div>
+    <!-- End of Next section-->
+
+    <!-- Play Video Section-->
+
+    <div
+      class="relative flex flex-wrap items-center video-cta md:py-0 py-10 px-4"
+    >
+      <div class="absolute inset-0 w-full h-full z-negative opacity-75">
+        <img
+          src="images/video-bg-image.jpg"
+          alt="Play Video"
+          class="cover w-full max-w-full h-full"
+        />
+      </div>
+      <div
+        class="container mx-auto text-center text-white w-full flex flex-wrap"
+      >
+        <h3
+          class="md:text-5xl text-3xl font-sans font-bold tracking-wide mb-4 w-full leading-tight"
+        >
+          Releases Coming Soon
+        </h3>
+        <div class="w-full md:mb-16 mb-6">
+          <a
+            href="#"
+            class="inline-flex item-center justify-center text-white w-auto hover:opacity-75"
+          >
+            <svg
+              class="fill-current text-white w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+            >
+              <title>Play Icon</title>
+              <path
+                d="M20 33l12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"
+              ></path>
+            </svg>
+            <span class="ml-2 pb-1 border-b border-white">Play Video</span>
+          </a>
+        </div>
+
+        <div class="w-full">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-white border bg-transparent px-8 py-3 hover:bg-white hover:text-black md:mt-0 mt-4 rounded"
+            >All Videos +</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="container mx-auto text-white py-6 md:px-16 px-4">
+      <div class="md:pl-3 md:border-l border-white mb-6">
+        <p class="opacity-75">GSL Newsletter</p>
+        <h3 class="md:text-6xl text-3xl font-sans font-bold mb-4">
+          See it First
+        </h3>
+
+        <form action="#">
+          <div class="flex items-center justify-start flex-wrap">
+            <input
+              type="email"
+              class="text-white border bg-transparent py-3 leading-tight px-4 md:w-1/3 w-full mr-4"
+              placeholder="Enter your email here*"
+            />
+            <input type="submit" class="btn-primary py-3" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+
+      <div class="flex items-center justify-start flex-wrap">
+        <p class="opacity-75 text-sm md:mb-0 mb-3">
+          &copy; 2019 By Graymonk Design. Reproduced from a Wix Template with
+          the Help of TailWindCSS.
+        </p>
+
+        <div class="md:ml-4 flex items-center justify-start">
+          <a href="#" class="mx-2">
+            <svg
+              class="fill-current text-white opacity-50 hover:opacity-75 w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="mx-2">
+            <svg
+              class="fill-current text-white opacity-50 hover:opacity-75 w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>vimeo</title>
+              <path
+                d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 0 0 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="mx-2">
+            <svg
+              class="fill-current text-white opacity-50 hover:opacity-75 w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>youtube</title>
+              <path
+                class="a"
+                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="mx-2">
+            <svg
+              class="fill-current text-white opacity-50 hover:opacity-75 w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>facebook</title>
+              <path
+                d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="mx-2">
+            <svg
+              class="fill-current text-white opacity-50 hover:opacity-75 w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>twitter</title>
+              <path
+                d="M23.954 4.569a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.061a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 0 0 2.46-2.548l-.047-.02z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of Play Video Section -->
+
+    <!-- Just a container test -->
+    <!-- <div class="container bg-brand flex mx-auto w-full p-20">
+      <h1 class="font-bold md:text-6xl text-2xl">New container</h1>
+    </div> -->
+    <!-- End of container test -->
+
+    <!-- Experimental code to show xl: lg: md: and default styles being applied -->
+    <!-- <div
+      class="xl:bg-red-400 xl:text-black lg:bg-black lg:p-8 md:flex-1 md:w-full md:p-48 p-20 bg-brand text-white content-center justify-center"
+    >
+      <h1>My New Content Header</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        soluta eligendi illum ipsam magnam dicta nesciunt illo recusandae fugiat
+        doloremque suscipit perspiciatis id, praesentium debitis, minus
+        sapiente? Magni, autem fugit.
+      </p>
+    </div> -->
+    <!-- End Experimental -->
+    <script src="index.js"></script>
   </body>
 </html>
