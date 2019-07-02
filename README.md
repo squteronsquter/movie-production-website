@@ -5,9 +5,9 @@ To get started:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/tailwindcss/playground.git production-movie-website
+   git clone https://github.com/squteronsquter/movie-production-website.git
 
-   cd production-movie-website
+   cd movie-production-website
    ```
 
 2. Install the dependencies:
@@ -36,8 +36,6 @@ To get started:
 
 ## Building for production
 
-Even though this isn't necessarily a starter kit for a proper project, we've included an example of setting up both [Purgecss](https://www.purgecss.com/) and [cssnano](https://cssnano.co/) to optimize your CSS for production.
-
 To build an optimized version of your CSS, simply run:
 
 ```bash
@@ -48,4 +46,4 @@ npm run production
 yarn run production
 ```
 
-After that's done, check out `./public/build/tailwind.css` to see the optimized output.
+CSS is only 7.5 Kb! Neat for a cool responsive site like that!
