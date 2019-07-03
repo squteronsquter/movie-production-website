@@ -39,7 +39,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
         >
           <div class="flex-1 flex items-center justify-between">
             <a href="#">
-              <img src="logo.webp" alt="GSL Logo" />
+              <picture>
+                <source srcset="logo.webp" type="image/webp" />
+                <source srcset="logo.jpg" type="image/jpeg" />
+                <img src="logo.jpg" />
+              </picture>
             </a>
             <!-- Javascript to add toggling for mobile devices - data-menu-toggle -->
             <button data-menu-toggle class="md:hidden block pr-1">
@@ -138,7 +142,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/1.webp" alt="#" />
+        <picture>
+          <source srcset="images/1.webp" type="image/webp" />
+          <source srcset="images/1.jpg" type="image/jpeg" />
+          <img src="images/1.jpg" alt="#" />
+        </picture>
       </a>
       <!-- End of Movie poster item -->
 
@@ -158,7 +166,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/2.webp" alt="#" />
+        <picture>
+          <source srcset="images/2.webp" type="image/webp" />
+          <source srcset="images/2.jpg" type="image/jpeg" />
+          <img src="images/2.jpg" alt="#" />
+        </picture>
       </a>
 
       <!-- Movie poster item -->
@@ -177,7 +189,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/3.webp" alt="#" />
+        <picture>
+          <source srcset="images/3.webp" type="image/webp" />
+          <source srcset="images/3.jpg" type="image/jpeg" />
+          <img src="images/3.jpg" alt="#" />
+        </picture>
       </a>
 
       <!-- Movie poster item -->
@@ -196,7 +212,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/4.webp" alt="#" />
+        <picture>
+          <source srcset="images/4.webp" type="image/webp" />
+          <source srcset="images/4.jpg" type="image/jpeg" />
+          <img src="images/4.jpg" alt="#" />
+        </picture>
       </a>
 
       <!-- Movie poster item -->
@@ -215,7 +235,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/5.webp" alt="#" />
+        <picture>
+          <source srcset="images/5.webp" type="image/webp" />
+          <source srcset="images/5.jpg" type="image/jpeg" />
+          <img src="images/5.jpg" alt="#" />
+        </picture>
       </a>
 
       <!-- Movie poster item -->
@@ -234,7 +258,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/6.webp" alt="#" />
+        <picture>
+          <source srcset="images/6.webp" type="image/webp" />
+          <source srcset="images/6.jpg" type="image/jpeg" />
+          <img src="images/6.jpg" alt="#" />
+        </picture>
       </a>
       <!-- Movie poster item -->
       <a href="#" class="relative group block mr-4 flex-shrink-0">
@@ -252,7 +280,11 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
             </p>
           </div>
         </div>
-        <img src="images/7.webp" alt="#" />
+        <picture>
+          <source srcset="images/7.webp" type="image/webp" />
+          <source srcset="images/7.jpg" type="image/jpeg" />
+          <img src="images/7.jpg" alt="#" />
+        </picture>
       </a>
 
       <!-- Arrow button-->
@@ -305,11 +337,15 @@ Googel fonts: https://fonts.googleapis.com/css?family=Barlow:400,700|Poppins:300
       class="relative flex flex-wrap items-center video-cta md:py-0 py-10 px-4"
     >
       <div class="absolute inset-0 w-full h-full z-negative opacity-75">
-        <img
-          src="images/video-bg-image.webp"
-          alt="Play Video"
-          class="cover w-full max-w-full h-full"
-        />
+        <picture>
+          <source srcset="images/video-bg-image.webp" type="image/webp" />
+          <source srcset="images/video-bg-image.jpg" type="image/jpeg" />
+          <img
+            src="images/video-bg-image.jpg"
+            alt="Play Video"
+            class="cover w-full max-w-full h-full"
+          />
+        </picture>
       </div>
       <div
         class="container mx-auto text-center text-white w-full flex flex-wrap"
